@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true, // true
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext", // "commonjs"
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "preserveConstEnums": true,
+    "noEmit": true,
+    "jsx": "react", // "react"
+    "rootDir": "./src",
+    "baseUrl": "./src",
+    "paths": {
+      "~*": ["./*"],
+      "test-utils": ["../utils/test-utils"]
+    }
+  },
+  "exclude": ["node_modules", "**/*.spec.ts", "**/*.spec.tsx", "**/*.test.ts", "**/*.test.tsx"],
+  "include": [
+    "src/next-env.d.ts",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/_tests__/App.test.js",
+    "src/context/Language/__tests__/Language.test.js",
+    "src/screens/__tests__/Reset.test.js",
+    "src/screens/__tests__/Submit.test.js",
+    "src/screens/__tests__/Validation.test.js"
+  ]
+}
